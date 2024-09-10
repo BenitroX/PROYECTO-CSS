@@ -1,0 +1,101 @@
+body {
+    background-color: lightgreen;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%; /* Ajusta las imágenes a su contenedor sin distorsionar */
+    height: auto;
+}
+
+.logo {
+    height: 250px;
+    width: auto;
+}
+
+#fachada {
+    width: 600px;
+    height: 500px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header img {
+    height: 270px;
+}
+
+header h2, header h1 {
+    margin: 0;
+}
+
+header h2 {
+    color: black;
+}
+
+header h1 {
+    color: blue;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+.gallery img {
+    height: 300px;
+    width: 100%;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+}
+
+/* Marquee container styles */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-content img {
+    height: 300px;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
