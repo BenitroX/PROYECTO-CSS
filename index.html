@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISGAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./DISGAR.png" alt="Logo">
+        <div>
+            <h2>Distribuidora de gas medicinal e industrial</h2>
+            <h1>Rapidez y Eficacia</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Empresa</a>
+        <a href="#">Servicios</a>
+        <a href="#">Productos</a>
+        <a href="#">Registro</a>
+    </nav>
+    <br>
+    <main>
+        <center>
+            <section class="gallery">
+                <img id="fachada" src="./fachadaa.jpg" alt="Imagen 1">
+                <img id="fachada" src="./camion.jfif" alt="Imagen 2">
+                <img id="fachada" src="./botellas.jpeg" alt="Imagen 3">
+            </section>
+        </center>
+
+        <section class="form-container">
+            <form>
+                <h2>Formulario de Registro y Cotización</h2>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="phone">Número de Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+
+                <label for="service">Escoger un servicio:</label>
+                <select name="service" id="service" required>
+                    <option value="oxygen">Oxígeno Medicinal</option>
+                    <option value="acetylene">Acetileno</option>
+                    <option value="argon">Argón</option>
+                    <option value="nitrogen">Nitrógeno</option>
+                </select>
+                <br><br>
+
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <br><br>
+
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section class="marquee-container">
+            <div class="marquee-content">
+                <img src="./oxi.jfif" alt="ogn">
+                <img src="./ac.avif" alt="AC">
+                <img src="./nitro.png" alt="nitro">
+                <img src="./argon.jfif" alt="argon">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
